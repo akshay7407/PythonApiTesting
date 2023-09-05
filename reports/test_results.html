@@ -439,10 +439,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>test_results.html</h1>
-    <p>Report generated on 05-Sep-2023 at 17:33:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 05-Sep-2023 at 20:01:05 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>1 tests ran in 1.48 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>20 tests ran in 10.48 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">17 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">2 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -453,28 +453,259 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/pytestLearning/test_TC_001_first.py::test_tc_001_Login_Logout_Testing</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">&gt;   ???<br/><span class="error">E   AssertionError: These 2 values must not be same</span><br/><span class="error">E   assert &#x27;Hello&#x27; != &#x27;Hello&#x27;</span><br/><br/>D:\PythonTutorial\PythonApiAutomation\pytestLearning\test_TC_001_first.py:15: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>This is Smoke Test Case.....
+This is end of my test cases
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/restApiRequests/test_basic_auth.py::test_basic_authentication[/endpoint1]</td>
+          <td class="col-duration">0.98</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">endpoint = &#x27;/endpoint1&#x27;, auth = &lt;requests.auth.HTTPBasicAuth object at 0x000001BF829963D0&gt;<br/><br/>&gt;   ???<br/><span class="error">E   assert 404 == 200</span><br/><span class="error">E    +  where 404 = &lt;Response [404]&gt;.status_code</span><br/><br/>D:\PythonTutorial\PythonApiAutomation\restApiRequests\test_basic_auth.py:20: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/restApiRequests/test_basic_auth.py::test_basic_authentication[/endpoint2]</td>
+          <td class="col-duration">1.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">endpoint = &#x27;/endpoint2&#x27;, auth = &lt;requests.auth.HTTPBasicAuth object at 0x000001BF829A1950&gt;<br/><br/>&gt;   ???<br/><span class="error">E   assert 404 == 200</span><br/><span class="error">E    +  where 404 = &lt;Response [404]&gt;.status_code</span><br/><br/>D:\PythonTutorial\PythonApiAutomation\restApiRequests\test_basic_auth.py:20: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">tests/pytestLearning/test_TC_001_first.py::test_tc_004_skip_cnditionally</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;D:\\PythonTutorial\\PythonApiAutomation\\pytestLearning\\test_TC_001_first.py&#x27;, 22, &#x27;Skipped: Skipping the test case because condition not match&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">tests/restApiRequests/test_0Auth_api.py::test_oauth_api_resource_access</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;D:\\PythonTutorial\\PythonApiAutomation\\tests\\restApiRequests\\test_0Auth_api.py&#x27;, 27, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/dataDrivenTest/test_data_driven_add_students.py::test_add_multiple_students</td>
-          <td class="col-duration">0.89</td>
+          <td class="col-duration">1.96</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>D:\PythonTutorial\PythonApiAutomation\tests********************
 201
-{&#x27;id&#x27;: 7785175, &#x27;first_name&#x27;: &#x27;first_name&#x27;, &#x27;middle_name&#x27;: &#x27;middle_name&#x27;, &#x27;last_name&#x27;: &#x27;last_name&#x27;, &#x27;date_of_birth&#x27;: &#x27;date_of_birth&#x27;}
+{&#x27;id&#x27;: 7785298, &#x27;first_name&#x27;: &#x27;first_name&#x27;, &#x27;middle_name&#x27;: &#x27;middle_name&#x27;, &#x27;last_name&#x27;: &#x27;last_name&#x27;, &#x27;date_of_birth&#x27;: &#x27;date_of_birth&#x27;}
 D:\PythonTutorial\PythonApiAutomation\
 201
-{&#x27;id&#x27;: 7785176, &#x27;first_name&#x27;: &#x27;Akshya&#x27;, &#x27;middle_name&#x27;: &#x27;test1&#x27;, &#x27;last_name&#x27;: &#x27;Gaikwad&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-10-28 00:00:00&#x27;}
+{&#x27;id&#x27;: 7785299, &#x27;first_name&#x27;: &#x27;Akshya&#x27;, &#x27;middle_name&#x27;: &#x27;test1&#x27;, &#x27;last_name&#x27;: &#x27;Gaikwad&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-10-28 00:00:00&#x27;}
 D:\PythonTutorial\PythonApiAutomation\
 201
-{&#x27;id&#x27;: 7785177, &#x27;first_name&#x27;: &#x27;Pruthvi&#x27;, &#x27;middle_name&#x27;: &#x27;test2&#x27;, &#x27;last_name&#x27;: &#x27;Rajput&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-10-02 00:00:00&#x27;}
+{&#x27;id&#x27;: 7785300, &#x27;first_name&#x27;: &#x27;Pruthvi&#x27;, &#x27;middle_name&#x27;: &#x27;test2&#x27;, &#x27;last_name&#x27;: &#x27;Rajput&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-10-02 00:00:00&#x27;}
 D:\PythonTutorial\PythonApiAutomation\
 201
-{&#x27;id&#x27;: 7785178, &#x27;first_name&#x27;: &#x27;Ravi&#x27;, &#x27;middle_name&#x27;: &#x27;test3&#x27;, &#x27;last_name&#x27;: &#x27;Shinde&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-09-09 00:00:00&#x27;}
+{&#x27;id&#x27;: 7785301, &#x27;first_name&#x27;: &#x27;Ravi&#x27;, &#x27;middle_name&#x27;: &#x27;test3&#x27;, &#x27;last_name&#x27;: &#x27;Shinde&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-09-09 00:00:00&#x27;}
 D:\PythonTutorial\PythonApiAutomation\
 201
-{&#x27;id&#x27;: 7785179, &#x27;first_name&#x27;: &#x27;Ram&#x27;, &#x27;middle_name&#x27;: &#x27;test4&#x27;, &#x27;last_name&#x27;: &#x27;Lohe&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-01-21 00:00:00&#x27;}
+{&#x27;id&#x27;: 7785302, &#x27;first_name&#x27;: &#x27;Ram&#x27;, &#x27;middle_name&#x27;: &#x27;test4&#x27;, &#x27;last_name&#x27;: &#x27;Lohe&#x27;, &#x27;date_of_birth&#x27;: &#x27;2023-01-21 00:00:00&#x27;}
 D:\PythonTutorial\PythonApiAutomation\
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/pytestLearning/test_TC_001_first.py::test_tc_003_Login_Logout_Invalid_Credentials</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>This is Sanity Test Case
+This is End of testcase
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/pytestLearning/test_TC_002.py::test_tc_002_Registration_Testing</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>This is Smoke Test Case.....
+This is end of my test cases
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/pytestLearning/test_TC_003_fixture.py::test_tc_001_Login_Logout_Testing</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>This is our Fixture Code will execute before testcase
+-----------------------------------------------------
+<br/> ------------------------------Captured stdout call------------------------------ <br/>This is Smoke Test Case.....
+This is end of my test cases
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/pytestLearning/test_TC_003_fixture.py::test_tc_003_Login_Logout_Invalid_Credentials</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>This is Sanity Test Case
+This is End of testcase
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Close DB Connection after executing testcase
+-----------------------------------------------------
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_deleteUser.py::test_delete_user</td>
+          <td class="col-duration">0.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_end_to_end.py::test_end_to_end_flow</td>
+          <td class="col-duration">0.92</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>7785303
+{&quot;id&quot;:7785303,&quot;first_name&quot;:&quot;Akshay&quot;,&quot;middle_name&quot;:&quot;k9087&quot;,&quot;last_name&quot;:&quot;Gaikwad&quot;,&quot;date_of_birth&quot;:&quot;28/10/2000&quot;}
+{&quot;status&quot;:&quot;true&quot;,&quot;msg&quot;:&quot;Add  data success&quot;}
+{&quot;status&quot;:&quot;true&quot;,&quot;msg&quot;:&quot;Add  data success&quot;}
+{&quot;status&quot;:&quot;true&quot;,&quot;data&quot;:{&quot;first_name&quot;:&quot;Akshay&quot;,&quot;middle_name&quot;:&quot;k9087&quot;,&quot;last_name&quot;:&quot;Gaikwad&quot;,&quot;date_of_birth&quot;:&quot;28/10/2000&quot;,&quot;TechnicalDetails&quot;:[{&quot;id&quot;:174079,&quot;language&quot;:[&quot;java&quot;,&quot;python&quot;],&quot;yearexp&quot;:&quot;3 + years of experience&quot;,&quot;lastused&quot;:&quot;5 months ago&quot;,&quot;st_id&quot;:&quot;7785303&quot;}],&quot;Address&quot;:[{&quot;Permanent_Address&quot;:{&quot;House_Number&quot;:null,&quot;City&quot;:null,&quot;State&quot;:null,&quot;Country&quot;:null,&quot;PhoneNumber&quot;:null},&quot;Current_Address&quot;:null,&quot;stId&quot;:&quot;7785303&quot;},{&quot;Permanent_Address&quot;:{&quot;House_Number&quot;:null,&quot;City&quot;:null,&quot;State&quot;:null,&quot;Country&quot;:null,&quot;PhoneNumber&quot;:null},&quot;Current_Address&quot;:null,&quot;stId&quot;:&quot;7785303&quot;}]}}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getStudentDetails.py::test_add_student_details</td>
+          <td class="col-duration">0.16</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>7785304
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getStudentDetails.py::test_update_student_data</td>
+          <td class="col-duration">0.27</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getStudentDetails.py::test_get_student_data</td>
+          <td class="col-duration">0.24</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;status&#x27;: &#x27;true&#x27;, &#x27;data&#x27;: {&#x27;id&#x27;: 7785304, &#x27;first_name&#x27;: &#x27;Akshay&#x27;, &#x27;middle_name&#x27;: &#x27;k9087&#x27;, &#x27;last_name&#x27;: &#x27;Gaikwad&#x27;, &#x27;date_of_birth&#x27;: &#x27;28/10/2000&#x27;}}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getStudentDetails.py::test_delete_data</td>
+          <td class="col-duration">0.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>{&quot;status&quot;:&quot;true&quot;,&quot;msg&quot;:&quot;Delete  data success&quot;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getUserFetchData.py::test_get_books_and_fetch_user_data</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>b&#x27;{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}&#x27;
+Name of the server  : cloudflare
+Fetch cookies : &lt;RequestsCookieJar[]&gt;
+{&#x27;page&#x27;: 2, &#x27;per_page&#x27;: 6, &#x27;total&#x27;: 12, &#x27;total_pages&#x27;: 2, &#x27;data&#x27;: [{&#x27;id&#x27;: 7, &#x27;email&#x27;: &#x27;michael.lawson@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;Michael&#x27;, &#x27;last_name&#x27;: &#x27;Lawson&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/7-image.jpg&#x27;}, {&#x27;id&#x27;: 8, &#x27;email&#x27;: &#x27;lindsay.ferguson@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;Lindsay&#x27;, &#x27;last_name&#x27;: &#x27;Ferguson&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/8-image.jpg&#x27;}, {&#x27;id&#x27;: 9, &#x27;email&#x27;: &#x27;tobias.funke@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;Tobias&#x27;, &#x27;last_name&#x27;: &#x27;Funke&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/9-image.jpg&#x27;}, {&#x27;id&#x27;: 10, &#x27;email&#x27;: &#x27;byron.fields@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;Byron&#x27;, &#x27;last_name&#x27;: &#x27;Fields&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/10-image.jpg&#x27;}, {&#x27;id&#x27;: 11, &#x27;email&#x27;: &#x27;george.edwards@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;George&#x27;, &#x27;last_name&#x27;: &#x27;Edwards&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/11-image.jpg&#x27;}, {&#x27;id&#x27;: 12, &#x27;email&#x27;: &#x27;rachel.howell@reqres.in&#x27;, &#x27;first_name&#x27;: &#x27;Rachel&#x27;, &#x27;last_name&#x27;: &#x27;Howell&#x27;, &#x27;avatar&#x27;: &#x27;https://reqres.in/img/faces/12-image.jpg&#x27;}], &#x27;support&#x27;: {&#x27;url&#x27;: &#x27;https://reqres.in/#support-heading&#x27;, &#x27;text&#x27;: &#x27;To keep ReqRes free, contributions towards server costs are appreciated!&#x27;}}
+Total number of pages  : 2
+michael.lawson@reqres.in
+lindsay.ferguson@reqres.in
+tobias.funke@reqres.in
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getUserFetchData.py::test_get_response_header</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;Date&#x27;: &#x27;Tue, 05 Sep 2023 14:31:03 GMT&#x27;, &#x27;Content-Type&#x27;: &#x27;application/json; charset=utf-8&#x27;, &#x27;Transfer-Encoding&#x27;: &#x27;chunked&#x27;, &#x27;Connection&#x27;: &#x27;keep-alive&#x27;, &#x27;X-Powered-By&#x27;: &#x27;Express&#x27;, &#x27;Access-Control-Allow-Origin&#x27;: &#x27;*&#x27;, &#x27;Etag&#x27;: &#x27;W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;&#x27;, &#x27;Via&#x27;: &#x27;1.1 vegur&#x27;, &#x27;Cache-Control&#x27;: &#x27;max-age=14400&#x27;, &#x27;CF-Cache-Status&#x27;: &#x27;HIT&#x27;, &#x27;Age&#x27;: &#x27;1142&#x27;, &#x27;Report-To&#x27;: &#x27;{&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BFJf7LdFfvExXtJ212d4%2B4rn0XheOwF4tVIu7MM2M6i4DpX7C%2B2dHC3LNJtEufcyiX68oe2x%2ByuSBOVqaBXzqppaThF%2FI48gmyglZkvEdFoLFAPsofK%2FJ6Qt3w%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}&#x27;, &#x27;NEL&#x27;: &#x27;{&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}&#x27;, &#x27;Vary&#x27;: &#x27;Accept-Encoding&#x27;, &#x27;Server&#x27;: &#x27;cloudflare&#x27;, &#x27;CF-RAY&#x27;: &#x27;801f2c792b173e28-BOM&#x27;, &#x27;Content-Encoding&#x27;: &#x27;gzip&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_getUserFetchData.py::test_validate_response_status</td>
+          <td class="col-duration">0.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_postNewResource.py::test_create_user</td>
+          <td class="col-duration">0.48</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>b&#x27;{&quot;name&quot;:&quot;Akshay&quot;,&quot;job&quot;:&quot;Automation Engineer&quot;,&quot;id&quot;:&quot;171&quot;,&quot;createdAt&quot;:&quot;2023-09-05T14:31:04.524Z&quot;}&#x27;
+{&#x27;name&#x27;: &#x27;Akshay&#x27;, &#x27;job&#x27;: &#x27;Automation Engineer&#x27;, &#x27;id&#x27;: &#x27;171&#x27;, &#x27;createdAt&#x27;: &#x27;2023-09-05T14:31:04.524Z&#x27;}
+171
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_putUpdateUser.py::test_update_user</td>
+          <td class="col-duration">0.38</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>b&#x27;{&quot;name&quot;:&quot;Akshay&quot;,&quot;job&quot;:&quot;Automation Engineer updated&quot;,&quot;updatedAt&quot;:&quot;2023-09-05T14:31:04.929Z&quot;}&#x27;
+{&#x27;name&#x27;: &#x27;Akshay&#x27;, &#x27;job&#x27;: &#x27;Automation Engineer updated&#x27;, &#x27;updatedAt&#x27;: &#x27;2023-09-05T14:31:04.929Z&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/restApiRequests/test_read_excel_data.py::test_add_student_details_using_excel</td>
+          <td class="col-duration">1.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>{&quot;id&quot;:7785305,&quot;first_name&quot;:&quot;first_name&quot;,&quot;middle_name&quot;:&quot;middle_name&quot;,&quot;last_name&quot;:&quot;last_name&quot;,&quot;date_of_birth&quot;:&quot;date_of_birth&quot;}
+{&quot;id&quot;:7785306,&quot;first_name&quot;:&quot;Akshya&quot;,&quot;middle_name&quot;:&quot;test1&quot;,&quot;last_name&quot;:&quot;Gaikwad&quot;,&quot;date_of_birth&quot;:&quot;2023-10-28 00:00:00&quot;}
+{&quot;id&quot;:7785307,&quot;first_name&quot;:&quot;Pruthvi&quot;,&quot;middle_name&quot;:&quot;test2&quot;,&quot;last_name&quot;:&quot;Rajput&quot;,&quot;date_of_birth&quot;:&quot;2023-10-02 00:00:00&quot;}
+{&quot;id&quot;:7785308,&quot;first_name&quot;:&quot;Ravi&quot;,&quot;middle_name&quot;:&quot;test3&quot;,&quot;last_name&quot;:&quot;Shinde&quot;,&quot;date_of_birth&quot;:&quot;2023-09-09 00:00:00&quot;}
+{&quot;id&quot;:7785309,&quot;first_name&quot;:&quot;Ram&quot;,&quot;middle_name&quot;:&quot;test4&quot;,&quot;last_name&quot;:&quot;Lohe&quot;,&quot;date_of_birth&quot;:&quot;2023-01-21 00:00:00&quot;}
 <br/></div></td></tr></tbody></table></body></html>
