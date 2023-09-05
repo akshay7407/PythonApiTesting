@@ -1,0 +1,5 @@
+7785168
+{"id":7785168,"first_name":"Akshay","middle_name":"k9087","last_name":"Gaikwad","date_of_birth":"28/10/2000"}
+{"status":"true","msg":"Add  data success"}
+{"status":"true","msg":"Add  data success"}
+{"status":"true","data":{"first_name":"Akshay","middle_name":"k9087","last_name":"Gaikwad","date_of_birth":"28/10/2000","TechnicalDetails":[{"id":174071,"language":["java","python"],"yearexp":"3 + years of experience","lastused":"5 months ago","st_id":"7785168"}],"Address":[{"Permanent_Address":{"House_Number":null,"City":null,"State":null,"Country":null,"PhoneNumber":null},"Current_Address":null,"stId":"7785168"},{"Permanent_Address":{"House_Number":null,"City":null,"State":null,"Country":null,"PhoneNumber":null},"Current_Address":null,"stId":"7785168"}]}}
