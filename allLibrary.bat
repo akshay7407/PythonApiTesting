@@ -1,6 +1,3 @@
-pip install requests
-pip install pytest
-pip install jsonpath
-pip install openpyxl
-
-
+python -m venv .env
+source .env/Scripts/activate 
+pip install -r requirements.txt
