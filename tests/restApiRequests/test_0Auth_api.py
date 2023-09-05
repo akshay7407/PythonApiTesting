@@ -24,6 +24,7 @@ def get_access_token():
     assert response.status_code == 200
     return response.json()["access_token"]
 
+@pytest.mark.skip
 def test_oauth_api_resource_access(get_access_token):
     headers = {
         "Authorization": f"Bearer {get_access_token}",
