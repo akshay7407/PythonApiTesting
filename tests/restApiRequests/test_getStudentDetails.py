@@ -14,7 +14,6 @@ def test_add_student_details():
     file = open(parent_directory + "data/studentDetails.json", 'r')
     json_request = json.loads(file.read())
     response = requests.post(API_URLS, json_request)
-    # print(response.text)
     id = jsonpath.jsonpath(response.json(),'id')
     print(id[0])
 
